@@ -43,7 +43,7 @@ void *array_list_get(Array_List *list, size_t index) {
         ERROR_RETURN(NULL, "Index out of bounds\n");
     }
 
-    return (u8)list->items + index * list->item_size;
+    return (u8*)list->items + index * list->item_size;
 }
 
 u8 array_list_remove(Array_List *list, size_t index) {

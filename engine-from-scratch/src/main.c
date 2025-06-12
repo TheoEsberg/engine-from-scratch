@@ -38,7 +38,7 @@ int main(int argc, char *argv[]) {
     render_init();
     physics_init();
 
-    u32 body_count = 10;
+    u32 body_count = 100;
 
     for (u32 i = 0; i < body_count; i++) {
         size_t body_index = physics_body_create(
